@@ -1,5 +1,7 @@
 import sys
 
+import pyperclip
+
 def main():
     inputado=''
     print("\nDigite 0 para sair: ")
@@ -9,7 +11,6 @@ def main():
     else:
         i=0
         final = ''
-        final+="<p>"
         for x in teste:
             if x=='$':
                 if i==0:
@@ -23,8 +24,8 @@ def main():
             else:
                 final+=x
                     
-        final+="</p>"
     print ("\n"+final)
+    pyperclip.copy(final)
     main()
 
 ##        text_file = open("Output.txt", "w")
