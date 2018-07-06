@@ -18,6 +18,8 @@ def main():
                 elif i==1:
                     final+=chr(92)+')'
                     i=0
+            elif x=='<':
+                final+="&lt;"
             else:
                 final+=x
                     
